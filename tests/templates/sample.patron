@@ -1,0 +1,3 @@
+<p:foreach>#{this}</p:foreach>
+#{one}
+#{two}
