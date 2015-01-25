@@ -26,7 +26,7 @@ class PatronEngine implements EngineInterface
 	public function render($template_pathname, $thisArg, array $variables, array $options = [])
 	{
 		$template = file_get_contents($template_pathname);
-		$patron = new \Patron\Engine;
+		$patron = \Patron\get_patron();
 
 		return $patron($template, $thisArg, [
 
