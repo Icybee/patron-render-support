@@ -11,14 +11,14 @@
 
 namespace Patron\RenderSupport;
 
-use ICanBoogie\Render\EngineInterface;
+use ICanBoogie\Render\Engine;
 
 /**
  * Bridge to the _Patron_ engine.
  *
  * @package Patron\RenderSupport
  */
-class PatronEngine implements EngineInterface
+class PatronEngine implements Engine
 {
 	/**
 	 * @inheritdoc
