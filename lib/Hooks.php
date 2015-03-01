@@ -40,6 +40,11 @@ class Hooks
 		$thisArg = $args['select'];
 		unset($args['select']);
 
+		if (is_array($thisArg))
+		{
+			$thisArg = new \ArrayObject($thisArg);
+		}
+
 		$renderer = Render\get_renderer();
 
 		$html = $renderer->render($thisArg, $args + [
