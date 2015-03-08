@@ -10,10 +10,3 @@
  */
 
 require __DIR__ . '/../vendor/autoload.php';
-
-$config = require __DIR__ . '/../vendor/icybee/patron/config/hooks.php';
-
-foreach ($config['patron.markups'] as $name => $definition)
-{
-	Patron\Hook::add($name, $definition);
-}
