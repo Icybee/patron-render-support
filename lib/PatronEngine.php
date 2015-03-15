@@ -31,7 +31,7 @@ class PatronEngine implements Engine
 		return $patron($template, $thisArg, [
 
 			'file' => $template_pathname,
-			'variables' => $variables
+			'variables' => [ self::VAR_TEMPLATE_PATHNAME => $template_pathname ] + $variables
 
 		]);
 	}
