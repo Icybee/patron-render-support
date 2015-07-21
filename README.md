@@ -22,7 +22,7 @@ which consists mainly in an engine to render ".patron" templates and the `render
 
 ## Requirement
 
-The package requires PHP 5.4 or later.
+The package requires PHP 5.5 or later.
 
 
 
