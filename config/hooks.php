@@ -2,15 +2,9 @@
 
 namespace Patron\RenderSupport;
 
-$hooks = __NAMESPACE__ . '\Hooks::';
+$hooks = Hooks::class . '::';
 
 return [
-
-	'events' => [
-
-		'ICanBoogie\Render\EngineCollection::alter' => $hooks . 'on_alter_engine_collection'
-
-	],
 
 	'patron.markups' => [
 
