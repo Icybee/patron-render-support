@@ -19,9 +19,9 @@
 	},
 	"minimum-stability": "dev",
 	"require": {
-		"php": ">=5.5.0",
-		"icybee/patron": "1.4.x-dev",
-		"icanboogie/render": "0.5.x-dev"
+		"php": "^5.5|^7.0",
+		"icybee/patron": "^1.4",
+		"icanboogie/render": "^0.5"
 	},
 	"autoload": {
 		"psr-4": {
