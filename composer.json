@@ -20,8 +20,7 @@
 	"minimum-stability": "dev",
 	"require": {
 		"php": "^5.5|^7.0",
-		"icybee/patron": "^1.4",
-		"icanboogie/render": "^0.5"
+		"icybee/patron": "^1.4"
 	},
 	"autoload": {
 		"psr-4": {
