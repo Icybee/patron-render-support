@@ -40,6 +40,12 @@ class Hooks
 		$thisArg = $args['select'];
 		unset($args['select']);
 
+		$args += [
+
+			'locals' => $engine->context->to_array()
+
+		];
+
 		if (is_array($thisArg))
 		{
 			$thisArg = new \ArrayObject($thisArg);
@@ -47,11 +53,14 @@ class Hooks
 
 		$renderer = Render\get_renderer();
 
-		$html = $renderer->render($thisArg, $args + [
-
-			'locals' => $engine->context->to_array()
-
-		]);
+		if ($thisArg)
+		{
+			$html = $renderer->render($thisArg, $args);
+		}
+		else
+		{
+			$html = $renderer->render($args);
+		}
 
 		return $template ? $engine($template, $html) : $html;
 	}
