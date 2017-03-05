@@ -23,7 +23,7 @@ class PatronEngine implements Engine
 	/**
 	 * @inheritdoc
 	 */
-	public function render($template_pathname, $thisArg, array $variables, array $options = [])
+	public function __invoke($template_pathname, $thisArg, array $variables, array $options = [])
 	{
 		$template = file_get_contents($template_pathname);
 		$patron = \Patron\get_patron();

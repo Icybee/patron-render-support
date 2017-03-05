@@ -16,7 +16,7 @@ class PatronEngineTest extends \PHPUnit_Framework_TestCase
     public function test_render()
     {
         $engine = new PatronEngine;
-        $html = $engine->render(__DIR__ . '/templates/sample.patron', [ "one", "two", "three" ], [
+        $html = $engine(__DIR__ . '/templates/sample.patron', [ "one", "two", "three" ], [
 
             "one" => "TESTING1",
             "two" => "TESTING2"
